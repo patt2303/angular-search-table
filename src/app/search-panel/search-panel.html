@@ -1,0 +1,11 @@
+<form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+  <label for="search-query">Search Employees:</label>
+  <input
+    id="search-query"
+    name="search-query"
+    formControlName="query"
+    placeholder="Enter employee name"
+    autocomplete="off"
+  />
+  <button type="submit">Search</button>
+</form>
